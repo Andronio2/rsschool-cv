@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url("assets/fonts/Merriweather-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("assets/fonts/Inter-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("assets/fonts/Inter-Bold.ttf");
+    font-weight: 700;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Начало заголовок*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header-inner {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 20px;
+}
+
+.menu-lang {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    display: inline-block;
+    height: 90px;
+    padding: 0 12px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0em;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.menu-item:hover a{
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.lang {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.lang-sw {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 0 5px;
+}
+
+.lang-active {
+    color: #BDAE82;
+}
+
+/* Конец заголовка*/
+
+/* Начало main*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+}
+
+section {
+    min-width: 1440px;
+}
+
+.section-other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-title {
+    height: 80px;
+    width: 700px;
+    margin: 0 auto;
+    background-color: #000;
+    text-align: center;
+    padding: 100px 0 60px;
+}
+
+.section-title::before {
+    position: relative;
+    top: 39px;
+    display: block;
+    height: 2px;
+    width: 700px;
+    box-sizing: border-box;
+    border: 1px solid #BDAE82;
+    background-color: #BDAE82;
+    content: "";
+}
+
+h2 {
+    color: #BDAE82;
+    font-family: Merriweather;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.section-h2 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+/* Начало hero*/
+#hero {
+    height: 910px;
+    background-image: url("./assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.hero-inner {
+    margin: 250px 0 0 80px;
+}
+
+.hero-title {
+    height: 120px;
+    margin: 0;
+    font-family: Merriweather;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120px;
+    color:#ffffff;
+    line-height: 120px;
+}
+
+.hero-text {
+    height: 120px;
+    width: 470px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    color:#ffffff;
+    margin: 10px 0 0 0;
+}
+
+.hero-btn {
+    height: 55px;
+    width: 220px;
+    background-color: #BDAE82;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+/* Конец hero*/
+/* Начало skills*/
+.skills-container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-item {
+    height: 240px;
+    width: 320px;
+}
+
+.skills-icon {
+    text-align: center;
+
+}
+
+.skills-text1 {
+    width: 280px;
+    margin: 0 auto;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    padding: 45px 0 20px 0;
+
+}
+
+.skills-text2 {
+    width: 280px;
+    margin: 0 auto;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+/* Конец skills */
+/* Начало portfolio */
+.portfolio-btn {
+    text-align: center;
+    padding: 0 0 60px 0;
+}
+
+.profolio-btn-item {
+    height: 55px;
+    width: 220px;
+    padding-right: 5px;
+    background: #000;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    color: #BDAE82;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.profolio-btn-item:hover {
+    background: #BDAE82;
+    color: #000;
+}
+
+.portfolio-items {
+    width: 1400px;
+    height: 1145px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.portfolio-item-img {
+    height: 560px;
+    width: 450px;
+ 
+}
+/* Конец portfolio */
+/* Начало Video */
+.video-player {
+    height: 705px;
+    width: 1400px;
+    margin: 0 auto;
+    background-image: url(./assets/img/video-player.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* для будущего улучшения
+.play-btn {
+} */
+/* Конец Video */
+/* Начало Price */
+.price-items {
+    width: 1400px;
+    height: 505px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 100px 0;
+}
+
+.price-items-item {
+    height: 505px;
+    width: 450px;
+    border: 3px solid #BDAE82;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+}
+
+.price-item-title {
+    font-family: Merriweather;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    padding: 43px 0 20px 0;
+}
+
+.price-item-price {
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: #BDAE82;
+    padding: 0 0 20px 0;
+}
+
+.price-item-text {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.price-item-btn {
+    width: 220px;
+    height: 55px;
+    background-color: #BDAE82;
+    color: #000;
+    line-height: 55px;
+    margin: 40px 0 0 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    border: 0;
+    transition: 0.3s;
+}
+
+.price-item-btn:hover {
+    background-color: #7c641d;
+    cursor: pointer;
+}
+/* Конец Price */
+/* Начало Contact */
+.section-contact {
+    height: 700px;
+    width: 1440px;
+    background-image: url(./assets/img/contacts.jpg);
+}
+
+.contact-inner {
+    height: 445px;
+    width: 450px;
+    margin: 60px 20px auto auto;
+}
+
+input {
+    height: 50px;
+    width: 450px;
+}
+
+textarea {
+    height: 100px;
+    width: 450px;
+}
+
+input,
+textarea {
+    padding: 5px 0 5px 20px;
+    margin: 10px 0 10px 0;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    color: #BDAE82;    
+}
+
+.contact-btn {
+    margin: 15px 0 0 0;
+}
+/* Конец Contact */
+/* Конец main */
+
+/* Начало footer */
+.footer {
+    height: 150px;
+    min-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer-text {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+
+}
+
+.footer-social {
+    display: flex;
+}
+/* Конец footer */
