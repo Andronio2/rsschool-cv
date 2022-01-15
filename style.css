@@ -34,19 +34,16 @@ body {
 
 /* Начало заголовок*/
 .header {
-    width: 100%;
-    height: 90px;
-    background-color: transparent;
-}
-
-.header-inner {
     width: 1440px;
+    height: 90px;
+    /* background-color: transparent; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-
+    background-image: url(./assets/img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
 }
 
 .logo {
@@ -199,14 +196,14 @@ h2 {
 
 /* Начало hero*/
 #hero {
-    height: 910px;
+    height: 820px;
     background-image: url("./assets/img/bg.jpg");
     background-position: center -90px;
     background-repeat: no-repeat;
 }
 
 .hero-inner {
-    margin: 250px 0 0 80px;
+    margin: 160px 0 0 80px;
 }
 
 .hero-title {
@@ -437,7 +434,7 @@ textarea {
 /* Начало footer */
 .footer {
     height: 150px;
-    min-width: 1440px;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -451,7 +448,7 @@ textarea {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 150px;
     text-align: left;
 
 }
