@@ -450,10 +450,20 @@ textarea {
     font-weight: 400;
     line-height: 150px;
     text-align: left;
-
+    padding: 0 0 0 20px;
 }
 
 .footer-social {
     display: flex;
+}
+
+.footer-social-item {
+    height: 32px;
+    width: 32px;
+    padding: 0 20px 0 0;
+}
+
+.footer-social-item:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 /* Конец footer */
