@@ -85,7 +85,7 @@ body {
 
 .menu-item:hover a{
     text-decoration: underline;
-    color: #ffffff;
+    color: #BDAE82;
     cursor: pointer;
 }
 
@@ -248,7 +248,10 @@ h2 {
 
 .skills-icon {
     text-align: center;
+}
 
+.skills-item:hover img {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .skills-text1 {
@@ -298,6 +301,7 @@ h2 {
     line-height: 40px;
     text-align: center;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .profolio-btn-item:hover {
@@ -313,13 +317,16 @@ h2 {
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .portfolio-item-img {
     height: 560px;
     width: 450px;
  
+}
+
+.portfolio-item-img:hover {
+    filter: opacity(75%);
 }
 /* Конец portfolio */
 /* Начало Video */
@@ -333,9 +340,9 @@ h2 {
     align-items: center;
 }
 
-/* для будущего улучшения
-.play-btn {
-} */
+.play-btn:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
 /* Конец Video */
 /* Начало Price */
 .price-items {
@@ -465,5 +472,16 @@ textarea {
 
 .footer-social-item:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-link:hover a{
+    text-decoration: underline;
+    color: #BDAE82;
+    cursor: pointer;
 }
 /* Конец footer */
