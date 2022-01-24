@@ -116,7 +116,8 @@ body {
     height: 4px;
     top: 23px;
     border: 1px solid #000;
-    background-color: #fff;    
+    background-color: #fff;
+    transition: 0.3s;
 }
 
 .burger::before,
@@ -130,6 +131,7 @@ body {
     left: 0;
     border: 1px solid #000;
     background-color: #fff;
+    transition: 0.3s;
 }
 
 .burger::before {
@@ -137,6 +139,19 @@ body {
 }
 .burger::after {
     bottom: 11px;
+}
+
+.header.open .burger span {
+    transform: scale(0);
+}
+
+.header.open .burger::before {
+    transform: rotate(45deg);
+    top: 23px;
+}
+.header.open .burger::after {
+    transform: rotate(-45deg);
+    bottom: 23px;
 }
 
 /* Конец заголовка*/
@@ -569,17 +584,28 @@ textarea {
     }
 
     .nav {
-        display: none;
         position: absolute;
         width: 620px;
-        height: calc(100vh - 90px);
-        right: 0;
-        top: 90px;
+        height: 100vh;
+        right: -620px;
+        top: 0px;
         background-color: #000;
+        transition: 0.5s;
     }
 
+    .header.open .nav {
+        right: 0;
+    }
+
+    .menu {
+        margin-top: 95px;
+    }
     .menu-item {
         display: block;
+        height: 72px;
+        padding: 0 0 17px 87px;
+        font-size: 35px;
+        line-height: 72px;
     }
 
     /* #hero */
@@ -730,4 +756,8 @@ textarea {
     }
 }
 
-
+@media (max-width: 681px) {
+    .skills-container {
+        width: 100%;
+    }
+}
