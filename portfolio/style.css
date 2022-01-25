@@ -107,6 +107,7 @@ body {
     position: relative;
     display: none;
     margin-right: 65px;
+    z-index: 3;
 }
 .burger span {
     display: block;
@@ -591,6 +592,7 @@ textarea {
         top: 0px;
         background-color: #000;
         transition: 0.5s;
+        z-index: 2;
     }
 
     .header.open .nav {
